@@ -7,17 +7,22 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "MurmurHash.h"
 
-@interface murmurhashforiosTests : XCTestCase
+@interface MurmurHashTests : XCTestCase
 
 @end
 
-@implementation murmurhashforiosTests
+@implementation MurmurHashTests
+{
+    MurmurHash* murmurHash;
+}
 
 - (void)setUp
 {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
+    murmurHash = [[MurmurHash alloc] init];
 }
 
 - (void)tearDown
@@ -28,7 +33,11 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    NSString* teststring = @"this is my teststring";
+    
+    uint64_t result = [murmurHash hash64:teststring];
+    NSLog(@"result = [%llu]", result);
+    
 }
 
 @end

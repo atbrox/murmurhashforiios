@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		678A5AD917D4899A006B2D45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 678A5AD817D4899A006B2D45 /* Foundation.framework */; };
-		678A5ADE17D4899A006B2D45 /* murmurhashforios.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 678A5ADD17D4899A006B2D45 /* murmurhashforios.h */; };
-		678A5AE017D4899A006B2D45 /* murmurhashforios.m in Sources */ = {isa = PBXBuildFile; fileRef = 678A5ADF17D4899A006B2D45 /* murmurhashforios.m */; };
+		678A5ADE17D4899A006B2D45 /* MurmurHash.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 678A5ADD17D4899A006B2D45 /* MurmurHash.h */; };
+		678A5AE017D4899A006B2D45 /* MurmurHash.mm in Sources */ = {isa = PBXBuildFile; fileRef = 678A5ADF17D4899A006B2D45 /* MurmurHash.mm */; };
 		678A5AE717D4899A006B2D45 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 678A5AE617D4899A006B2D45 /* XCTest.framework */; };
 		678A5AE817D4899A006B2D45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 678A5AD817D4899A006B2D45 /* Foundation.framework */; };
 		678A5AEA17D4899A006B2D45 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 678A5AE917D4899A006B2D45 /* UIKit.framework */; };
 		678A5AED17D4899A006B2D45 /* libmurmurhashforios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 678A5AD517D4899A006B2D45 /* libmurmurhashforios.a */; };
 		678A5AF317D4899A006B2D45 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 678A5AF117D4899A006B2D45 /* InfoPlist.strings */; };
-		678A5AF517D4899A006B2D45 /* murmurhashforiosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 678A5AF417D4899A006B2D45 /* murmurhashforiosTests.m */; };
+		678A5AF517D4899A006B2D45 /* MurmurHashTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 678A5AF417D4899A006B2D45 /* MurmurHashTests.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				678A5ADE17D4899A006B2D45 /* murmurhashforios.h in CopyFiles */,
+				678A5ADE17D4899A006B2D45 /* MurmurHash.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,14 +45,14 @@
 		678A5AD517D4899A006B2D45 /* libmurmurhashforios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmurmurhashforios.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		678A5AD817D4899A006B2D45 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		678A5ADC17D4899A006B2D45 /* murmurhashforios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "murmurhashforios-Prefix.pch"; sourceTree = "<group>"; };
-		678A5ADD17D4899A006B2D45 /* murmurhashforios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = murmurhashforios.h; sourceTree = "<group>"; };
-		678A5ADF17D4899A006B2D45 /* murmurhashforios.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = murmurhashforios.m; sourceTree = "<group>"; };
+		678A5ADD17D4899A006B2D45 /* MurmurHash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MurmurHash.h; sourceTree = "<group>"; };
+		678A5ADF17D4899A006B2D45 /* MurmurHash.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MurmurHash.mm; sourceTree = "<group>"; };
 		678A5AE517D4899A006B2D45 /* murmurhashforiosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = murmurhashforiosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		678A5AE617D4899A006B2D45 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		678A5AE917D4899A006B2D45 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		678A5AF017D4899A006B2D45 /* murmurhashforiosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "murmurhashforiosTests-Info.plist"; sourceTree = "<group>"; };
 		678A5AF217D4899A006B2D45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		678A5AF417D4899A006B2D45 /* murmurhashforiosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = murmurhashforiosTests.m; sourceTree = "<group>"; };
+		678A5AF417D4899A006B2D45 /* MurmurHashTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MurmurHashTests.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +110,8 @@
 		678A5ADA17D4899A006B2D45 /* murmurhashforios */ = {
 			isa = PBXGroup;
 			children = (
-				678A5ADD17D4899A006B2D45 /* murmurhashforios.h */,
-				678A5ADF17D4899A006B2D45 /* murmurhashforios.m */,
+				678A5ADD17D4899A006B2D45 /* MurmurHash.h */,
+				678A5ADF17D4899A006B2D45 /* MurmurHash.mm */,
 				678A5ADB17D4899A006B2D45 /* Supporting Files */,
 			);
 			path = murmurhashforios;
@@ -128,7 +128,7 @@
 		678A5AEE17D4899A006B2D45 /* murmurhashforiosTests */ = {
 			isa = PBXGroup;
 			children = (
-				678A5AF417D4899A006B2D45 /* murmurhashforiosTests.m */,
+				678A5AF417D4899A006B2D45 /* MurmurHashTests.mm */,
 				678A5AEF17D4899A006B2D45 /* Supporting Files */,
 			);
 			path = murmurhashforiosTests;
@@ -224,7 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				678A5AE017D4899A006B2D45 /* murmurhashforios.m in Sources */,
+				678A5AE017D4899A006B2D45 /* MurmurHash.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				678A5AF517D4899A006B2D45 /* murmurhashforiosTests.m in Sources */,
+				678A5AF517D4899A006B2D45 /* MurmurHashTests.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
